@@ -1,6 +1,6 @@
 <div class="card box">
 	<h1>minibox. pense,<br>dentro da caixa</h1>
-		<form [formGroup]="loginForm">
+		<form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
 			<div class="row form-group">
 				<label for="username" class="col-4">username</label>
 				<input type="text" id="username" class="col-4 form-control">
@@ -12,7 +12,7 @@
       </div>
 
 					<div class="row mt-5">
-						<button (onclick)="onSubmit()" type="submit" class="offset-4 col-4 btn btn-dark">login</button>
+						<button type="submit" class="offset-4 col-4 btn btn-dark">login</button>
 					</div>
 		</form>
 </div>
