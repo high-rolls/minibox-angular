@@ -1,16 +1,18 @@
 <div class="card box">
-	<h1>minibox</h1>
-	<form [formGroup]="loginForm">
-		<div class="row form-group">
-			<label for="username" class="col-4">username</label>
-			<input type="text" id="username" class="col-4 form-control">
-    </div>
+	<h1>minibox. pense,<br>dentro da caixa</h1>
+		<form [formGroup]="loginForm">
+			<div class="row form-group">
+				<label for="username" class="col-4">username</label>
+				<input type="text" id="username" class="col-4 form-control">
+      </div>
 
-			<div class="row">
-				<label for="password" class="col-4 form-group">password</label>
-				<input type="password" id="password" class="col-4 form-control">
-    </div>
+				<div class="row">
+					<label for="password" class="col-4 form-group">password</label>
+					<input type="password" id="password" class="col-4 form-control">
+      </div>
 
-				<button type="submit" class="col-4 btn btn-dark">login</button>
-	</form>
+					<div class="row mt-5">
+						<button (onclick)="onSubmit()" type="submit" class="offset-4 col-4 btn btn-dark">login</button>
+					</div>
+		</form>
 </div>
